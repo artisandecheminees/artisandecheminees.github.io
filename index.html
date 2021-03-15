@@ -5,12 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
 body {font-size:16px;}
 .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
 .w3-half img:hover{opacity:1}
+
+.inline-icon {
+   vertical-align: bottom;
+   font-size: 26px !important;
+}
+
 </style>
 <body>
 
@@ -101,8 +107,8 @@ body {font-size:16px;}
     <h1 class="w3-xxxlarge w3-text-red"><b>Contact</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <p>Pour plus des renseignements ou pour faire un devis, n’hésitez pas à nous contacter par téléphone pour une prise de rendez-vous.</p>
-    <p>Vasile Mandru</p>
-    <p class="fa fa-phone">+33 62 84 80 326</p>
+    <p><span class="inline-icon material-icons">person</span> <span> Vasile Mandru</span></p>
+    <p><span class="inline-icon material-icons">call</span>+33 62 84 80 326</p>
     <form action="/action_page.php" target="_blank">
       <div class="w3-section">
         <label>Name</label>
