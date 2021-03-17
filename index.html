@@ -17,6 +17,13 @@ body {font-size:16px;}
    font-size: 26px !important;
 }
 
+.cropped {
+    width: 200px; /* width of container */
+    height:520px; /* height of container */
+    object-fit: cover;
+    object-position: 90% 90%; /* try 20px 10px */ 
+}
+
 </style>
 <body>
 
@@ -49,8 +56,24 @@ body {font-size:16px;}
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
   <!-- Header -->
-  <div class="w3-container" style="margin-top:80px" id="showcase">
+  <div class="w3-container" style="margin-top:80px">
     <h1 class="w3-xxlarge"><b>INSTALLATION & RESTAURATION & POSER DES CHEMINÉES</b></h1>
+  </div>
+
+    <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Prestations de service</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Artisan atrier avec 10 ans d’expérience, je peux choisir les meilleurs matériaux et les plus surs selon vos besoins.</p>
+    <p>             Si vous avez déjà une cheminée et que vous souhaitez la restaurer, ou si vous en avez acheté une et que vous avez besoin d’une personne expérimentée pour l’installer, je pense que je suis la bonne personne pour le faire.
+            
+
+          Nous vous proposons des prestations clés en main, ou des prestations sur mesure : cheminées anciennes ou cheminées modernes, cheminées en marbre, cheminées en pierre, cheminées en bois. 
+
+    </p>
+  </div>
+
+   <div class="w3-container" style="margin-top:80px" id="showcase">
     <h1 class="w3-xxxlarge w3-text-red"><b>Cheminées</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
   </div>
@@ -58,15 +81,18 @@ body {font-size:16px;}
   <!-- Photo grid (modal) -->
   <div class="w3-row-padding">
     <div class="w3-half">
-      <img src="/w3images/kitchenconcrete.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
-      <img src="/w3images/livingroom.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
-      <img src="/w3images/diningroom.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+      <img src="https://user-images.githubusercontent.com/18483425/111534050-35955c80-8770-11eb-89e8-0c8001471c37.jpg" style="width:100%" onclick="onClick(this)" alt="cheminée 1">
+      <img src="https://user-images.githubusercontent.com/18483425/111534103-46de6900-8770-11eb-8184-3f7dfc791737.jpeg" style="width:100%" onclick="onClick(this)" alt="cheminée 2">
+      <img src="https://user-images.githubusercontent.com/18483425/111534136-52ca2b00-8770-11eb-8f95-b197d87551b8.jpeg" style="width:100%" onclick="onClick(this)" alt="cheminée 3">
+      <img src="https://user-images.githubusercontent.com/18483425/111534085-40e88800-8770-11eb-8a28-05e25ff5ffaf.jpg" style="width:100%" onclick="onClick(this)" class = 'cropped' alt="cheminée 7">
+
+
     </div>
 
     <div class="w3-half">
-      <img src="/w3images/atrium.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
-      <img src="/w3images/bedroom.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
-      <img src="/w3images/livingroom2.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+      <img src="https://user-images.githubusercontent.com/18483425/111534127-4fcf3a80-8770-11eb-85cb-a8f8658798fd.jpeg" style="width:100%" onclick="onClick(this)" alt="cheminée 4">
+      <img src="https://user-images.githubusercontent.com/18483425/111534117-4cd44a00-8770-11eb-94c0-419b6d2379b6.jpeg" style="width:100%" onclick="onClick(this)" alt="cheminée 5">
+      <img src="https://user-images.githubusercontent.com/18483425/111534111-49d95980-8770-11eb-85ea-d0b8825aa738.jpeg" style="width:100%" onclick="onClick(this)" alt="cheminée 6">
     </div>
   </div>
 
@@ -79,18 +105,7 @@ body {font-size:16px;}
     </div>
   </div>
 
-  <!-- Services -->
-  <div class="w3-container" id="services" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Prestations de service</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Artisan atrier avec 10 ans d’expérience, je peux choisir les meilleurs matériaux et les plus surs selon vos besoins.</p>
-    <p>             Si vous avez déjà une cheminée et que vous souhaitez la restaurer, ou si vous en avez acheté une et que vous avez besoin d’une personne expérimentée pour l’installer, je pense que je suis la bonne personne pour le faire.
-            
 
-          Nous vous proposons des prestations clés en main, ou des prestations sur mesure : cheminées anciennes ou cheminées modernes, cheminées en marbre, cheminées en pierre, cheminées en bois. 
-
-    </p>
-  </div>
   
   
   <!-- Packages / Pricing Tables 
@@ -108,8 +123,8 @@ body {font-size:16px;}
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <p>Pour plus des renseignements ou pour faire un devis, n’hésitez pas à nous contacter par téléphone pour une prise de rendez-vous.</p>
     <p><span class="inline-icon material-icons">person</span> <span> Vasile Mandru</span></p>
-    <p><span class="inline-icon material-icons">call</span>+33 62 84 80 326</p>
-    <p><span class="inline-icon material-icons">alternate_email</span></p>
+    <p><span class="inline-icon material-icons">call</span> +33 62 84 80 326</p>
+    <p><span class="inline-icon material-icons">alternate_email</span> mandruvasile@yahoo.com</p>
    
   </div>
 
